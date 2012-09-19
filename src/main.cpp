@@ -6,11 +6,13 @@
 int main( ){
 
     ofAppGlutWindow window;
-	//ofSetupOpenGL(&window, 1680, 1050, OF_WINDOW); // <-------- setup the GL context
-	ofSetupOpenGL(&window, 1680 * 2, 1050 * 3, OF_GAME_MODE); // <-------- setup the GL context
-	// this kicks off the running of my app
-	// can be OF_WINDOW or OF_FULLSCREEN
-	// pass in width and height too:
+	
+	// for linux, is in full screen
+	//ofSetupOpenGL(&window, 1680 * 2, 1050 * 3, OF_GAME_MODE);
+
+	// for windows
+	ofSetupOpenGL(&window, 800, 700, OF_WINDOW); // <-------- setup the GL context
+	ofSetWindowPosition(50, 200);
 
 	ofRunApp( new testApp());
 }

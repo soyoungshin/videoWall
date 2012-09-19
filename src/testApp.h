@@ -1,8 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-//#include "hfPosition.h"
-#include "ofxGstStandaloneVideoPlayer.h"
 #include "ofxBezel.h"
 #include "ofxCompositionHandler.h"
 #include <time.h>
@@ -26,12 +24,9 @@ class testApp : public ofBaseApp {
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-
+		
 		ofFbo fbo;
 		ofxBezel bezel;
 
 		ofxCompositionHandler compositionHandler;
-
-		//VideoPlayerPtr vidPlayer;
-		ofVideoPlayer players[6];
 };

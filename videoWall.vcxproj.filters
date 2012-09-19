@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxComposition\src\ofxComposition.cpp">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxComposition\src\ofxCompositionHandler.cpp">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxComposition\src\ofxVideoWrapper.cpp">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxBezel\src\ofxBezel.cpp">
+      <Filter>addons\ofxBezel\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtilsWin.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocketWin.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTitles\src\ofxTitles.cpp">
+      <Filter>addons\ofxTitles\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneUtils.cpp">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoGrabber.cpp">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoPlayer.cpp">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="..\..\..\addons\ofxComposition\src\ofxComposition.h">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxComposition\src\ofxCompositionHandler.h">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxComposition\src\ofxVideoWrapper.h">
+      <Filter>addons\ofxComposition\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxBezel\src\ofxBezel.h">
+      <Filter>addons\ofxBezel\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscException.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTitles\src\ofxTitles.h">
+      <Filter>addons\ofxTitles\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hfPosition.h" />
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneUtils.h">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoGrabber.h">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoPlayer.h">
+      <Filter>addons\ofxGstStandaloneVideo\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="addons">
+      <UniqueIdentifier>{3cea7079-1220-4476-addd-d73d45888277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxBezel">
+      <UniqueIdentifier>{2e7a5608-bf31-4367-94d3-b970848b06d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxComposition">
+      <UniqueIdentifier>{2ab93ff9-0767-41e1-ba7d-646b3e4d4502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc">
+      <UniqueIdentifier>{64d17d80-0413-4a1e-9588-14b2a9a71340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxComposition\src">
+      <UniqueIdentifier>{eec704f4-bb4e-4b52-b44f-3f210421f8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxBezel\src">
+      <UniqueIdentifier>{be136ff6-cf4f-4dae-8cb3-bd041d9a2d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs">
+      <UniqueIdentifier>{3b4a4503-e2f7-48b7-a59a-311876910b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack">
+      <UniqueIdentifier>{b4607dec-9dd0-4c97-b8e9-0d3e1dcbd04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src">
+      <UniqueIdentifier>{b47f3de2-8730-4df6-9e54-38c4f2c42c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip">
+      <UniqueIdentifier>{080a55f4-adf7-4482-be6e-90462e7f95f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\osc">
+      <UniqueIdentifier>{04d74536-bfa2-48e6-9459-72334fe55f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\posix">
+      <UniqueIdentifier>{0db72d60-c6d5-4e68-8d34-666781189632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\win32">
+      <UniqueIdentifier>{6ab31451-5494-4474-b8d5-cdfbfd3e3134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\src">
+      <UniqueIdentifier>{6e03983d-109c-4f88-8b27-ca242135f42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTitles">
+      <UniqueIdentifier>{5768dfcd-3ae5-4688-a72d-77ecbcb5ffbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTitles\src">
+      <UniqueIdentifier>{060d9c54-2a8e-4d8b-9be3-83e1de811d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxGstStandaloneVideo">
+      <UniqueIdentifier>{78e500e8-7b8e-4d62-a32f-f9def037e111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxGstStandaloneVideo\src">
+      <UniqueIdentifier>{df8a0081-65ca-4b81-8155-80095def3ee4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -8,22 +8,7 @@ void testApp::setup(){
 	compositionHandler.setup(PORT);
 	fbo.allocate(ofGetWidth(), ofGetHeight());
 	//bezel.setup(40.0f, 36.0f);
-	bezel.setup(20.0f, 20.0f, 3, 2);
-
-    players[0].loadMovie("big_buck_bunny_720p_h264.mov");
-    players[1].loadMovie("big_buck_bunny_720p_h264 (3rd copy).mov");
-    players[2].loadMovie("big_buck_bunny_720p_h264 (another copy).mov");
-    players[3].loadMovie("big_buck_bunny_720p_h264 (copy).mov");
-    players[4].loadMovie("big_buck_bunny_720p_h264 (4th copy).mov");
-    players[5].loadMovie("big_buck_bunny_720p_h264 (5th copy).mov");
-
-
-
-	for(int i= 0; i < 6; i++) {
-	    players[i].setPosition(rand() % 100 / 100.0);
-        players[i].play();
-        players[i].setLoopState(OF_LOOP_NORMAL);
-	}
+	bezel.setup(0.0f, 0.0f, 3, 2);
 }
 
 //--------------------------------------------------------------
@@ -39,7 +24,7 @@ void testApp::update(){
 		fileNames.push_back("data/varied-codecs/720/h264/5/qt_h264_20sec_720.mov");
 		fileNames.push_back("data/varied-codecs/720/h264/6/qt_h264_20sec_720.mov");
 
-
+		
 		//		fileNames.push_back("data/varied-codecs/1080/h264/1/qt_h264.mov");
 		//fileNames.push_back("data/varied-codecs/1080/h264/2/qt_h264.mov");
 		//fileNames.push_back("data/varied-codecs/1080/h264/3/qt_h264.mov");
@@ -47,35 +32,15 @@ void testApp::update(){
 		//fileNames.push_back("data/varied-codecs/1080/h264/5/qt_h264.mov");
 		//fileNames.push_back("data/varied-codecs/1080/h264/6/qt_h264.mov");
 		*/
-	for(int i= 0; i < 6; i++) {
-        players[i].idleMovie();
-	}
+
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofBackground(0,0,0);
-
-	// for debugging
-	fbo.begin();
-	ofClear(0,0,0,0);
-
-	int width = ofGetWidth();
-	int height = ofGetHeight();
-
-	for(int i= 0; i < 6; i++) {
-        players[i].draw(i*300, i*300, width/2, height/2);
-	}
-
-	fbo.end();
-
+	compositionHandler.drawToFbo(&fbo);
 	bezel.draw(&fbo);
-	//fbo.draw(0,0);
 	compositionHandler.drawSubtitles();
-
-    // added for debugging
-
-
 
 	// draw some debug info
 	ofEnableAlphaBlending();
@@ -83,11 +48,9 @@ void testApp::draw(){
 	ofRect(0,0,100,30);
 	ofDisableAlphaBlending();
 
-
 	ofSetHexColor(0xffffff);
 	string toDraw = ofToString(ofGetFrameRate());
 	ofDrawBitmapString(toDraw, 20, 20);
-
 }
 
 //--------------------------------------------------------------
@@ -108,13 +71,15 @@ void testApp::keyPressed(int key){
 		case OF_KEY_RIGHT:
 			bezel.setRowSpacer(bezel.getRowSpacer() - 1);
 			break;
-		//case OF_KEY_RETURN:
-		case '1':
+		case OF_KEY_RETURN:
 			bezel.setDisplayHelper(!bezel.getDisplayHelper());
 			break;
+		case ' ':
+			// this was more of a test case anyways.
+			//			(*players.begin())->setPaused((*players.begin())->getGstVideoUtils()->isPaused());
 		default:
 			break;
-	}
+	}	
 }
 
 //--------------------------------------------------------------
@@ -153,6 +118,6 @@ void testApp::gotMessage(ofMessage msg){
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){
+void testApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
