@@ -7,40 +7,23 @@ void testApp::setup(){
 	ofSetVerticalSync(true);
 	compositionHandler.setup(PORT);
 	fbo.allocate(ofGetWidth(), ofGetHeight());
-	//bezel.setup(40.0f, 36.0f);
-	bezel.setup(0.0f, 0.0f, 3, 2);
+	bezel.setup(40.0f, 36.0f, 3, 2);
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	compositionHandler.update();
-
-	//for future reference, these are the filepaths
-	/*
-		fileNames.push_back("data/varied-codecs/720/h264/1/qt_h264_20sec_720.mov");
-		fileNames.push_back("data/varied-codecs/720/h264/2/qt_h264_20sec_720.mov");
-		fileNames.push_back("data/varied-codecs/720/h264/3/qt_h264_20sec_720.mov");
-		fileNames.push_back("data/varied-codecs/720/h264/4/qt_h264_20sec_720.mov");
-		fileNames.push_back("data/varied-codecs/720/h264/5/qt_h264_20sec_720.mov");
-		fileNames.push_back("data/varied-codecs/720/h264/6/qt_h264_20sec_720.mov");
-
-		
-		//		fileNames.push_back("data/varied-codecs/1080/h264/1/qt_h264.mov");
-		//fileNames.push_back("data/varied-codecs/1080/h264/2/qt_h264.mov");
-		//fileNames.push_back("data/varied-codecs/1080/h264/3/qt_h264.mov");
-		//fileNames.push_back("data/varied-codecs/1080/h264/4/qt_h264.mov");
-		//fileNames.push_back("data/varied-codecs/1080/h264/5/qt_h264.mov");
-		//fileNames.push_back("data/varied-codecs/1080/h264/6/qt_h264.mov");
-		*/
-
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofBackground(0,0,0);
+
 	compositionHandler.drawToFbo(&fbo);
 	bezel.draw(&fbo);
-	compositionHandler.drawSubtitles();
+
+    compositionHandler.drawSubtitles();
 
 	// draw some debug info
 	ofEnableAlphaBlending();
@@ -51,6 +34,7 @@ void testApp::draw(){
 	ofSetHexColor(0xffffff);
 	string toDraw = ofToString(ofGetFrameRate());
 	ofDrawBitmapString(toDraw, 20, 20);
+
 }
 
 //--------------------------------------------------------------
@@ -74,12 +58,9 @@ void testApp::keyPressed(int key){
 		case OF_KEY_RETURN:
 			bezel.setDisplayHelper(!bezel.getDisplayHelper());
 			break;
-		case ' ':
-			// this was more of a test case anyways.
-			//			(*players.begin())->setPaused((*players.begin())->getGstVideoUtils()->isPaused());
 		default:
 			break;
-	}	
+	}
 }
 
 //--------------------------------------------------------------
@@ -118,6 +99,6 @@ void testApp::gotMessage(ofMessage msg){
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
+void testApp::dragEvent(ofDragInfo dragInfo){
 
 }
